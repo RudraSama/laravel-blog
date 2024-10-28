@@ -28,8 +28,8 @@ Before you begin, ensure you have met the following requirements:
    Open your terminal and run the following command:
 
    ```bash
-   git clone https://github.com/rudrasama/your-repo.git
-   cd your-repo
+   git clone https://github.com/rudrasama/laravel-blog.git
+   cd laravel-blog
    ```
 
 2. **Install Dependencies**
