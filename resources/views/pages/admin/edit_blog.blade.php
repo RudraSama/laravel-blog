@@ -62,7 +62,7 @@
                 <label for="">Select tags</label>
                 <div class="flex flex-wrap gap-2" id="tagList">
                     @foreach($tags as $tag)
-                        <label for="tag-{{$tag->id}}" class="py-1 border-2 border-transparent rounded-lg has-[:checked]:border-2 has-[:checked]:border-sky-600">
+                        <label for="tag-{{$tag->id}}" class="py-1 border-2 border-transparent rounded-lg has-[:checked]:border-3 has-[:checked]:border-sky-700 cursor-pointer">
                             <x-tag tag="{{$tag->tag}}" color="{{$tag->tag_color}}" />
                             <input type="checkbox" id="tag-{{$tag->id}}" onchange="addTag(this)" class="hidden" {{in_array($tag->id, $blog_tags)?"checked":""}}/>
                         </label>

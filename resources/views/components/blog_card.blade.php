@@ -28,8 +28,8 @@
         @if(Auth::check())
             <div class="flex justify-end gap-5 mt-5 float-end">
                 <span class="mr-auto px-2 py-1 text-white rounded-lg {{$blog->published?"bg-green-500":"bg-orange-600"}}">{{$blog->published?"Published":"Draft"}}</span>
-                <a href="/admin/blog/edit/{{$blog->id}}" class="text-white bg-blue-400 px-2 py-1 rounded-xl">Edit</a>
-                <a href="/admin/blog/delete/{{$blog->id}}" class="text-white bg-red-600 px-2 py-1 rounded-xl">Delete</a>
+                <a href="/admin/blog/edit/{{$blog->id}}" class="text-white bg-blue-400 hover:bg-blue-500 duration-200 px-2 py-1 rounded-xl">Edit</a>
+                <a href="/admin/blog/delete/{{$blog->id}}" class="text-white bg-red-600 hover:bg-red-700 duration-200 px-2 py-1 rounded-xl">Delete</a>
             </div>
         @endif
     </div>
